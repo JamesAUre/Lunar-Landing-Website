@@ -1,0 +1,94 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  
+  color: #1594e5;
+  line-height: 1.8;
+  background:#D3D3D3;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("../images/giphy2.gif");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+
+
+#content{
+    width: 800px;
+    background: #fff;
+    max-height: 300px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#content.open{
+    max-height: 1200px;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#ratings{
+    width: 800px;
+    background: #fff;
+    overflow: hidden;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#show-more{
+    background: #1594e5;
+    color: #fff;
+    width:140px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#photos{
+    text-align: center;
+}
+
+#contact{
+  width: 800px;
+  background: #fff;
+}

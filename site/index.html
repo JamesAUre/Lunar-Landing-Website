@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="css/jquery.timepicker.css">
+<link href="css/custom.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">You <span class="w3-hide-small">Have </span> Arrived At.... </span><br>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LUNAR <span class="w3-hide-small">LANDING</span> HOTEL</span>
+  
+</div>
+</div>
+
+<section class="section bg-light pb-0">
+    <div class="container">
+     
+      <div class="row check-availabilty" id="next">
+        <div class="block-32 aos-init aos-animate" data-aos="fade-up" data-aos-offset="-200">
+
+          <form action="#">
+            <div class="row">
+              <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                <label for="checkin_date" class="font-weight-bold text-black">Phone Number</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-calendar"></span></div>
+                  <input type="text" id="checkin_date" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                <label for="checkout_date" class="font-weight-bold text-black">Nights Staying</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-calendar"></span></div>
+                  <input type="number" id="nightsstay" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                <div class="row">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label for="adults" class="font-weight-bold text-black">Adults</label>
+                    <div class="field-icon-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="adults" class="form-control">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label for="children" class="font-weight-bold text-black">Children</label>
+                    <div class="field-icon-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="children" class="form-control">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                <label for="checkout_date" class="font-weight-bold text-black">Email</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-calendar"></span></div>
+                  <input type="text" id="checkout_date" class="form-control">
+                </div>
+              </div>
+              
+              
+              <div class="col-md-6 col-lg-3 align-self-end">
+                <!--<button class="btn btn-primary btn-block text-white">Check Availabilty</button>-->
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7">
+          <h2 class="heading aos-init aos-animate" data-aos="fade-up">Select room to book</h2>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up">
+          <a href="#" class="room" data-toggle="modal" data-target="#exampleModal" onclick="calculatetotal(90)">
+            <figure class="img-wrap">
+              <img src="images/photo2.png" alt="Free website template" class="img-fluid mb-3">
+            </figure>
+            <div class="p-3 text-center room-info">
+              <h2>Single Room</h2>
+              <span class="text-uppercase letter-spacing-1">
+                  $90 per adult<br>
+                  $45 per child<br>
+                  each night</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up">
+          <a href="#" class="room" data-toggle="modal" data-target="#exampleModal" onclick="calculatetotal(120)">
+            <figure class="img-wrap">
+              <img src="images/photo1.png" alt="Free website template" class="img-fluid mb-3">
+            </figure>
+            <div class="p-3 text-center room-info">
+              <h2>Family Room</h2>
+              <span class="text-uppercase letter-spacing-1">
+                $120 per adult<br>
+                $60 per child<br>
+                each night
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up">
+          <a href="#" class="room" data-toggle="modal" data-target="#exampleModal" onclick="calculatetotal(250)">
+            <figure class="img-wrap">
+              <img src="images/photo3.png" alt="Free website template" class="img-fluid mb-3" >
+            </figure>
+            <div class="p-3 text-center room-info">
+              <h2>Presidential Room</h2>
+              <span class="text-uppercase letter-spacing-1">
+                $250 per adult<br>
+                $125 per child<br>
+                each night</span>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+</section>
+
+<!-- Container (About Section) -->
+<div id="content">
+  <h3>ABOUT US</h3>
+  <p><em>We love outer space</em></p>
+  <p>Our dream is deliver exceptional service to customers across the galaxy. We have worked on our dream since
+    we started with our service on earth, but realized there was much more out there and we had to give everyone
+  the opportunity the experience this. If you stay at this hotel, you may meet us! We love to adventure to different
+  planets but we always stop by to enjoy the services the hotel provides. The team of lunar landing hotel are made
+  of friendly accomodative people happy to help you and enjoy your stay. We are very proud of the service we deliver
+  and are happy to recruit anyone who would like to be part of our team, which is growing at the rate of 
+  the universe. Interested in knowing more? Click show more!</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>The space bros</b></p><br>
+      <img src="images/us.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      
+    </div>
+    
+    
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>We're pleased you have an interest of who we are. Well, allow us, the space bros, to introduce ourselves.
+        Our names are Neutron and Apollo. We are best friends who met while working at another hotel
+        firm called Griffin. We were both space enthusiasts and we loved to deliver impeccable service.
+        We decided to use all our funds to make our dream a reality of putting space and service together
+        to make Lunar Landing Hotel. We started off making a small hotel orbitting earth in 2054, everyone
+        was thrilled for the opportunity to experience an outer space adventure. Soon, we expanded to other
+        planets in our milky way and now our hotel can be found across all corners of the galaxy. You only
+        need to make one accomodation to stay at any hotel for the time being, why enter a location when
+        you can stay at any location? Thank you for reading and we hope you enjoy your browsing of our website.
+    </p>
+</div>
+  </div>
+</div>
+<a id="show-more"> SHOW MORE </a>
+
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Facilities
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Activities
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Rooms
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Reasons to come!
+  </div>
+</div>
+
+<div id="ratings">
+    <p class="w3-large w3-center w3-padding-16">Ratings</p>
+    <p class="w3-wide"><i class="fa fa-tripadvisor"></i>Trip advisor</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-facebook-square"></i>Facebook</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-twitter"></i>Twitter</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+  </div>
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">OUR FACILITIES</h3>
+  <p class="w3-center"><em>Here are some of our facilities<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/photo4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/photo5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/photo6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/photo7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/photo8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/photo9.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/photo10.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/photo11.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+     </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">GOT ANY FEEDBACK?</h3>
+  <p class="w3-center"><em>We'd love to know!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="images/rating.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> The Moon<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 4422<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: feedback@lunarhotel.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PAYMENT CHECK</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%; border: 0px;">
+                <img src="images/tick.gif" class="card-img-top" alt="done">
+                <div class="card-body">
+                  <h5 class="card-title">Cost of the room: </h5>
+                  <p class="card-text" id="totalcost">Error: Could not retrieve cost</p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/jquery.timepicker.min.js"></script> 
+
+    <script src = "js/test.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
